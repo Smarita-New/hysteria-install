@@ -162,11 +162,11 @@ inst_cert(){
         cert_path="/etc/hysteria/cert.crt"
         key_path="/etc/hysteria/private.key"
         openssl ecparam -genkey -name prime256v1 -out /etc/hysteria/private.key
-        openssl req -new -x509 -days 36500 -key /etc/hysteria/private.key -out /etc/hysteria/cert.crt -subj "/CN=www.bing.com"
+        openssl req -new -x509 -days 36500 -key /etc/hysteria/private.key -out /etc/hysteria/cert.crt -subj "/CN=www.uzh.ch"
         chmod 777 /etc/hysteria/cert.crt
         chmod 777 /etc/hysteria/private.key
-        hy_domain="www.bing.com"
-        domain="www.bing.com"
+        hy_domain="www.uzh.ch"
+        domain="www.uzh.ch"
     fi
 }
 
